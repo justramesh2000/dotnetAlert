@@ -1,0 +1,12 @@
+﻿@using DotNetFramework.Models
+@using DotNetFramework.ServiceReference1
+@model List<AlertModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+<select name="select_item" id="select-sort" class="select__sort" tabindex="0">
+    @foreach (var loc in Model)
+    {
+        <option value="@loc.Category">@loc.Category</option>
+    }
+</select>
